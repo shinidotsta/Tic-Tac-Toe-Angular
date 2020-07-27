@@ -1,0 +1,31 @@
+.blinking {
+    width: 91%;
+	height:50px;
+    display: block;
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+	align-content: center;
+    margin: 2px;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(240, 71, 85);    }
+    49%{    color: rgb(199, 25, 25); }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(241, 10, 10);    }
+}
+
+.game-btn {
+    background-color: #ffab00;
+    border: none;
+    color: blue;
+    padding: 25px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

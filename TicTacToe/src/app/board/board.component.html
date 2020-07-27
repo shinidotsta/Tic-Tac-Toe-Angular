@@ -1,0 +1,29 @@
+
+<div class="game-board">
+    <div class="player">
+        <span [style.visibility]="myVar ? 'visible' : 'hidden'" class="blinking">{{winner}} Congratulations !!</span>
+     </div>
+    <div class="board">
+        <div>
+            <square *ngFor="let square of squares | slice:0 : 3;let i=index"
+            [value]="square" (playerClick)="clickHandler(i)">
+            </square>
+        </div>
+        <div>
+            <square *ngFor="let square of squares | slice:3 : 6;let i=index"
+            [value]="square" (playerClick)="clickHandler(i+3)">
+            </square>
+        </div>
+        <div>
+            <square *ngFor="let square of squares | slice:6;let i=index"
+            [value]="square" (playerClick)="clickHandler(i+6)">
+            </square>
+        </div>
+    </div>
+    <br>
+    <!--<div class="gameMsg">
+        <div *ngIf="winner ==='tie'"> It's a Tie </div>
+    </div>-->
+    
+    <div class="game-btn" (click)="startGame()">Start Game</div>
+</div>

@@ -1,0 +1,17 @@
+
+ .main
+ {
+     display: grid;
+     grid-template-columns: 100%;
+ }
+ .headimg{
+    width: 10em;
+    height: 5em;  
+    margin-left: 36em;
+}
+
+.board
+{
+    display: flex;
+    justify-content: center;
+}
